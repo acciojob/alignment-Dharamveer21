@@ -1,48 +1,62 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Assignment 3</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        .middle {
+            border-collapse: collapse;
+            border: 1px solid black;
+            border-spacing: 1px;
+        }
+        .middle td, .middle th {
+            padding: 1px;
+            border: 1px solid black;
+        }
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+        .green {
+            background-color: green;
+            color: white; /* Optional: to make text visible on green background */
+        }
+        .blue {
+            background-color: blue;
+            color: white; /* Optional: to make text visible on blue background */
+        }
+    </style>
 </head>
-
 <body>
-    <!-- Main heading, centered -->
-    <h1>HTML Assignment #3</h1>
+    <h1 style="text-align: center;">HTML Assignment #3</h1>
 
-    <!-- Table 1 -->
-    <!-- 3 rows, 3 columns, middle row has class "center", rightmost column has class "right" -->
-    <!-- Table ID: table-1; Cells in first row have IDs t11, t12, t13 -->
+    <h2>Table 1</h2>
     <table id="table-1" class="middle">
-        <tr id="t11">
-            <td class="left">left</td>
-            <td class="center">center</td>
+        <tr>
+            <td id="t11">left</td>
+            <td id="t12">center</td>
+            <td id="t13" class="right">right</td>
+        </tr>
+        <tr class="center">
+            <td>left</td>
+            <td>center</td>
             <td class="right">right</td>
         </tr>
-
-        <tr id="t12" class="center">
-            <td class="left">left</td>
-            <td class="center">center</td>
-            <td class="right">right</td>
-        </tr>
-
-        <tr id="t13" class="right">
-            <td class="left">left</td>
-            <td class="center">center</td>
+        <tr>
+            <td>left</td>
+            <td>center</td>
             <td class="right">right</td>
         </tr>
     </table>
 
-    <br>
-
-    <!-- Table 2 -->
-    <!-- 6 rows, 6 columns, first row in a single cell (colspan=6) -->
-    <!-- Table ID: table-2; First cell ID: t21 -->
+    <h2>Table 2</h2>
     <table id="table-2" class="middle">
         <tr>
-            <td id="t21" colspan="6">This cell spans all 6 columns</td>
+            <td id="t21" colspan="6">This is a single cell spanning all 6 columns in the first row.</td>
         </tr>
-
         <tr>
             <td></td>
             <td></td>
@@ -51,7 +65,6 @@
             <td></td>
             <td></td>
         </tr>
-
         <tr>
             <td></td>
             <td></td>
@@ -60,7 +73,6 @@
             <td></td>
             <td></td>
         </tr>
-
         <tr>
             <td></td>
             <td></td>
@@ -69,16 +81,6 @@
             <td></td>
             <td></td>
         </tr>
-
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-
         <tr>
             <td></td>
             <td></td>
@@ -89,27 +91,24 @@
         </tr>
     </table>
 
-    <br>
-
-    <!-- Table 3 -->
-    <!-- Includes an image; first row is green, last row is blue -->
-    <!-- Table ID: table-3; Image cell ID: t-image -->
+    <h2>Table 3</h2>
     <table id="table-3" class="middle">
         <tr class="green">
-            <td>Green Row</td>
+            <td colspan="3">This is the first row with a green background.</td>
         </tr>
-
         <tr>
-            <td id="t-image" class="center">
-                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg"
-                    alt="Basketball Dunk">
-            </td>
+            <td>Some text</td>
+            <td id="t-image">
+                <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+                </td>
+            <td>More text</td>
         </tr>
-
         <tr class="blue">
-            <td>Blue Row</td>
+            <td colspan="3">This is the last row with a blue background.</td>
         </tr>
     </table>
-</body>
 
+    <p>Remember the current location is Delhi, Delhi, India.</p>
+
+</body>
 </html>
