@@ -1,6 +1,7 @@
 /* Table Styles */
 table {
     border: 1px solid black;
+    border-collapse: collapse;
     border-spacing: 1px;
     padding: 1px;
 }
@@ -13,10 +14,12 @@ td {
 /* Background color for "green" and "blue" classes */
 .green {
     background-color: green;
-    color: white; /* Ensuring text visibility */
+    color: white;
+    /* Ensuring text visibility */
 }
 
 .blue {
     background-color: blue;
-    color: white; /* Ensuring text visibility */
+    color: white;
+    /* Ensuring text visibility */
 }
