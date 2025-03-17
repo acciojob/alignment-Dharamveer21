@@ -1,1 +1,22 @@
-/*  your css code here. If applicable */
+/* Table Styles */
+table {
+    border: 1px solid black;
+    border-spacing: 1px;
+    padding: 1px;
+}
+
+td {
+    border: 1px solid black;
+    padding: 1px;
+}
+
+/* Background color for "green" and "blue" classes */
+.green {
+    background-color: green;
+    color: white; /* Ensuring text visibility */
+}
+
+.blue {
+    background-color: blue;
+    color: white; /* Ensuring text visibility */
+}
